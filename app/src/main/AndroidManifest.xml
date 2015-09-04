@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.istu_rider" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Base" >
+        <activity
+            android:name=".LauncherScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name=".ProfileScreen"
+            android:label="@string/title_activity_profile_screen" >
+        </activity>
+        <activity
+            android:name=".RateScreen"
+            android:label="@string/title_activity_rate_screen" >
+        </activity>
+        <activity
+            android:name=".TopUpScreen"
+            android:label="@string/title_activity_top_up_screen" >
+        </activity>
+        <activity
+            android:name=".WithDrawScreen"
+            android:label="@string/title_activity_with_draw_screen" >
+        </activity>
+        <activity
+            android:name=".DashBoardScreen"
+            android:label="@string/title_activity_dash_board_screen" >
+        </activity>
+    </application>
+
+</manifest>

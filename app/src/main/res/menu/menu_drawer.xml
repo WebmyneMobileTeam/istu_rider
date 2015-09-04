@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.webmyne.kidscrown.ui.MyDrawerActivity">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:icon="@drawable/ic_action_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/drawer_chat"
+            android:icon="@drawable/ic_communication_chat"
+            android:title="Chat" />
+
+        <item
+            android:id="@+id/drawer_profile"
+            android:icon="@drawable/ic_social_person"
+            android:title="Profile" />
+
+
+
+        <item
+            android:id="@+id/drawer_dashboard"
+            android:icon="@drawable/ic_action_dashboard"
+            android:title="Dashboard"/>
+
+        <item
+            android:id="@+id/drawer_rating"
+            android:icon="@drawable/ic_action_grade"
+            android:title="Rating"/>
+
+        <item
+            android:id="@+id/drawer_topup"
+            android:icon="@drawable/ic_editor_attach_money"
+            android:title="Topup Balance"/>
+
+        <item
+            android:id="@+id/drawer_withdraw"
+            android:icon="@drawable/ic_action_account_balance_wallet"
+            android:title="Withdraw Money"/>
+
+
+    </group>
+</menu>
