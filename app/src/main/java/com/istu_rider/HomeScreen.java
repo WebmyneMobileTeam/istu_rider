@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +35,13 @@ public class HomeScreen extends AppCompatActivity {
             setSupportActionBar(toolbar);
         }
         initDrawer();
+
+        Fragment homefragment = HomeFragment.newInstance();
+        FragmentManager manager = getSupportFragmentManager();
+
+        if (homefragment != null) {
+            manager.beginTransaction().replace(R.id.content, homefragment).commit();
+        }
     }
 
     @Override
@@ -101,6 +110,12 @@ public class HomeScreen extends AppCompatActivity {
                 break;
 
             case R.id.drawer_home:
+                Fragment homefragment = HomeFragment.newInstance();
+                FragmentManager manager = getSupportFragmentManager();
+
+                if (homefragment != null) {
+                    manager.beginTransaction().replace(R.id.content, homefragment).commit();
+                }
 
                 break;
 
